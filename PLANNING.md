@@ -30,7 +30,8 @@ Week 11: documenting
 Week 12 (week after APs): documenting
 
 ## Sketch
-CoreXY on Prusa printables is inspiration
+
+![sketch image](media/IMG_1518.jpg)
 
 
 
