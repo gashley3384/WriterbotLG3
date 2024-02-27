@@ -13,9 +13,9 @@ Week 3: Finish CADing mechanism prototype and print over weekend
 
 Week 4: Assemble and test. If bad → fix and reprint; else → begin Code
 
-Week 5: Continue code and CAD pen holder and print prototype
+Week 5: Continue code and CAD
 
-Week 6: Finish base functions (MoveX, MoveY) and if prototype works → MoveZ
+Week 6: Finish base functions (MoveX, MoveY, MoveZ)
 
 Week 7: codeNewline function and begin writing translate function
 
