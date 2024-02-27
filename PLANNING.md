@@ -58,8 +58,11 @@ Axles
 	
 
 Ask about what needs to be written
+
 Get input
+
 For each letter in input
+
 	if there is no space on the paper (we know the size), go to a new line
 	translate(letter)
 
