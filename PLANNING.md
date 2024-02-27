@@ -6,16 +6,27 @@ The project is challenging.
 
 ## Schedule
 Week 1: CAD Pen Mount and Paper mount plate
+
 Week 2: CAD Baseplate and Begin CADing Mechanism
+
 Week 3: Finish CADing mechanism prototype and print over weekend
+
 Week 4: Assemble and test. If bad → fix and reprint; else → begin Code
+
 Week 5: Continue code and CAD pen holder and print prototype
+
 Week 6: Finish base functions (MoveX, MoveY) and if prototype works → MoveZ
+
 Week 7: codeNewline function and begin writing translate function
+
 Week 8: continue writing translate function
+
 Week 9: finish writing translate function
+
 Week 10: testing and editing
+
 Week 11: documenting
+
 Week 12 (week after APs): documenting
 
 ##Sketch
