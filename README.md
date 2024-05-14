@@ -49,69 +49,82 @@ for coils in coils2:
 
 motor2 = stepper.StepperMotor(coils2[0], coils2[1], coils2[2], coils2[3], microsteps=None)
 
-pwm = pwmio.PWMOut(board.D7, duty_cycle=2 ** 15, frequency=50) #servo setup stuff
+pwm = pwmio.PWMOut(board.D2, duty_cycle=2 ** 15, frequency=50) #servo setup stuff
 
 my_servo = servo.Servo(pwm) #naming the servo
 
 #FUNCTION GUIDE:
 #first letter + number indicates type of motor and motor number
 #s is servo, m1 is motor 1 and m2 is motor 2
-#pos is position followed by position number
-def m1pos1 ():
+#f or b defines forwards or backwards for motor
+#up or down is for servo up or servo down
+
+def m1f1 ():
     for step in range(FULLTURN):
         motor1.onestep(style=stepper.DOUBLE)
         time.sleep(DELAY)
 
-def m1pos2 ():
+def m1f2 ():
     for step in range(HALFTURN):
         motor1.onestep(style=stepper.DOUBLE)
         time.sleep(DELAY)
 
-def m1pos3 ():
+def m1f4 ():
     for step in range (QTURN):
         motor1.onestep(style=stepper.DOUBLE)
         time.sleep(DELAY)
 
-def m1pos4 ():
+def m1f8 ():
     for step in range(ETURN):
         motor1.onestep(direction=stepper.DOUBLE)
         time.sleep(DELAY)
 
-def m1pos5 ():
+def m1b1 ():
     for step in range (FULLTURN):
         motor1.onestep(direction=stepper.BACKWARD)
         time.sleep(DELAY)
 
-def m2pos1 ():
+def m2f1 ():
     for step in range(FULLTURN):
         motor2.onestep(style=stepper.DOUBLE)
         time.sleep(DELAY)
 
-def m2pos2 ():
+def m2f2 ():
     for step in range(HALFTURN):
         motor2.onestep(style=stepper.DOUBLE)
         time.sleep(DELAY)
 
-def m2pos3 ():
+def m2f4 ():
     for step in range (QTURN):
+        motor2.onestep(style=stepper.DOUBLE)
+        time.sleep(DELAY)
+
+def m2f8 ():
+    for step in range(ETURN):
+        motor2.onestep(direction=stepper.DOUBLE)
+        time.sleep(DELAY)
+
+def m2b1 ():
+    for step in range (FULLTURN):
+        motor2.onestep(direction=stepper.BACKWARD)
+        time.sleep(DELAY)
+
+def m2b2 ():
+    for step in range (HALFTURN):
+        motor2.onestep(direction=stepper.BACKWARD)
+        time.sleep(DELAY)
+def forward():
+    for step in range (HALFTURN):
+        motor2.onestep(style=stepper.DOUBLE)
         motor1.onestep(style=stepper.DOUBLE)
         time.sleep(DELAY)
 
-def m2pos4 ():
-    for step in range(ETURN):
-        motor1.onestep(direction=stepper.DOUBLE)
-        time.sleep(DELAY)
 
-def m2pos5 ():
-    for step in range (FULLTURN):
-        motor1.onestep(direction=stepper.BACKWARD)
-        time.sleep(DELAY)
+def sup ():
+    my_servo.angle = 50
 
-def sUp ():
-    my_servo.angle = 120
-
-def sDown ():
-    my_servo.angle = 100
+def sdown ():
+    my_servo.angle = 46
 
 
 while True:
@@ -119,36 +132,50 @@ while True:
     print(letnum)
     print(linenum)
     if x is ("k"): #if you input the letter in the "", the stepper will do these function
-        sUp()
-        m1pos1()
+        sup()
+        m1f1()
         time.sleep(.2)
-        sDown()
-        m1pos2()
+        sdown()
+        m1f2()
         letnum = letnum + 1 #uptick variable by 1
     if x is ("g"):
-        sUp()
-        m1pos4()
+        sup()
+        m1f4()
         letnum = letnum + 1
     if x is ("t"):
-        m1pos5()
+        m1b1()
         time.sleep(.5)
-        sDown()
-        m1pos3()
+        sdown()
+        m1f4()
         letnum = letnum + 1
     if x is ("d"):
-        m1pos4()
+        m1f8()
         time.sleep(.5)
-        sDown()
-        m1pos5()
+        sdown()
+        m1b1()
         letnum = letnum + 1
+    if x is ("1"):
+        forward()
+    if x is ("2"):
+        m2b1()
+    if x is ("3"):
+        m2f1()
+        time.sleep(.1)
+        sdown()
+        m2b1()
+        time.sleep(.1)
+        sup()
     if letnum >= 8: # when you have enough letters, move this way and reset
-        m1pos1()
-        sUp()
+        m1f1()
+        sup()
         letnum = 0
-        linenum = linenum + 1 #when letter number has reached a certain point
-
         #when letter number has reached 8, shift right, pen down, go up, go up, go up, etc
         #remember to have some way of saying pen up, shift to center, shift down at the end of each set of letter commands
+    if linenum >= 3:
+        m2b1()
+        m2b1()
+        m2b1()
+        linenum = 0
 
 ```
 
