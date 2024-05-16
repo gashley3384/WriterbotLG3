@@ -4,7 +4,7 @@
 This project is a robot that writes out letters in a created language called Angarkase according to keyboard inputs put in by a person. You will be able to input a letter, and a small plate
 with a piece of paper will move with a pen over it, which will be attached to a servo in order to lift and put down the pen. 
 
-### CODE
+### CODE COMPLEX
 ```python
 import board
 import time
@@ -177,6 +177,99 @@ while True:
         m2b1()
         linenum = 0
 
+```
+
+### CODE SIMPLE
+
+```python
+import board
+import time
+import digitalio
+from adafruit_motor import stepper 
+from adafruit_motor import servo 
+import pwmio 
+#these are the necessary libraries
+
+DELAY = 0.01
+FULLTURN = 200 #Stepper has up to 200 steps, few variable
+HALFTURN = 100
+QTURN = 50 #quarter turn
+ETURN = 25 #eighth turn
+letnum = 0  #number of letter, allows for going to the next line + move down
+linenum = 0 #number of line, allows count line
+
+ 
+coils1 = (
+    digitalio.DigitalInOut(board.D9),  # A1
+    digitalio.DigitalInOut(board.D10), # A2
+    digitalio.DigitalInOut(board.D11), # B1
+    digitalio.DigitalInOut(board.D12), # B2
+) # we gotta set up those coils
+
+for coils in coils1:
+    coils.direction = digitalio.Direction.OUTPUT #motor is the output
+
+
+motor1 = stepper.StepperMotor(coils1[0], coils1[1], coils1[2], coils1[3], microsteps=None) #motor setup stuff
+
+coils2 = (
+    digitalio.DigitalInOut(board.D4),  # A1
+    digitalio.DigitalInOut(board.D5), # A2
+    digitalio.DigitalInOut(board.D6), # B1
+    digitalio.DigitalInOut(board.D7), # B2
+) # we gotta set up those coils for the second motor
+#for the second motor instead of coils1 and motor1, use coils2 and motor2
+
+for coils in coils2:
+    coils.direction = digitalio.Direction.OUTPUT
+
+motor2 = stepper.StepperMotor(coils2[0], coils2[1], coils2[2], coils2[3], microsteps=None)
+
+pwm = pwmio.PWMOut(board.D2, duty_cycle=2 ** 15, frequency=50) #servo setup stuff
+
+my_servo = servo.Servo(pwm) #naming the servo
+
+#FUNCTION GUIDE:
+#first letter + number indicates type of motor and motor number
+#s is servo, m1 is motor 1 and m2 is motor 2
+#f or b defines forwards or backwards for motor
+#up or down is for servo up or servo down
+
+def m1f ():
+    for step in range(HALFTURN):
+        motor1.onestep(style=stepper.DOUBLE)
+        time.sleep(DELAY)
+
+def m1b ():
+    for step in range(HALFTURN):
+        motor1.onestep(style=stepper.BACKWARD)
+        time.sleep(DELAY)
+
+def m2f ():
+    for step in range (HALFTURN):
+        motor1.onestep(style=stepper.DOUBLE)
+        time.sleep(DELAY)
+
+def m2b ():
+    for step in range(HALFTURN):
+        motor1.onestep(direction=stepper.BACKWARD)
+        time.sleep(DELAY)
+
+
+while True:
+    x = input("Enter command: ") #keyboard setup stuff, x is the variable that holds letters
+    if x is ("q"):
+        m1f()
+    
+    if x is ("w"):
+        m1b()
+
+    if x is ("e"):
+        m2f()
+
+    if x is ("r"):
+        m2b()
+ 
 ```
 
 ### ONSHAPE LINK
