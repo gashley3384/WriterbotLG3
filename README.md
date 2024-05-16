@@ -248,18 +248,48 @@ def m1f ():
 
 def m1b ():
     for step in range(HALFTURN):
-        motor1.onestep(style=stepper.BACKWARD)
+        motor1.onestep(direction=stepper.BACKWARD)
         time.sleep(DELAY)
 
 def m2f ():
     for step in range (HALFTURN):
-        motor1.onestep(style=stepper.DOUBLE)
+        motor2.onestep(style=stepper.DOUBLE)
         time.sleep(DELAY)
 
 def m2b ():
     for step in range(HALFTURN):
+        motor2.onestep(direction=stepper.BACKWARD)
+        time.sleep(DELAY)
+
+def left():
+    for step in range (HALFTURN):
+        motor2.onestep(direction=stepper.BACKWARD)
         motor1.onestep(direction=stepper.BACKWARD)
         time.sleep(DELAY)
+
+def right():
+    for step in range (HALFTURN):
+        motor2.onestep(style=stepper.DOUBLE)
+        motor1.onestep(style=stepper.DOUBLE)
+        time.sleep(DELAY)
+
+def mup():
+    for step in range (HALFTURN):
+        motor2.onestep(style=stepper.DOUBLE)
+        motor1.onestep(direction=stepper.BACKWARD)
+        time.sleep(DELAY)
+
+def mdown():
+    for step in range (HALFTURN):
+        motor2.onestep(direction=stepper.BACKWARD)
+        motor1.onestep(style=stepper.DOUBLE)
+        time.sleep(DELAY)
+
+def sup ():
+    my_servo.angle = 50
+
+def sdown ():
+    my_servo.angle = 45
 
 
 while True:
@@ -275,7 +305,37 @@ while True:
 
     if x is ("r"):
         m2b()
- 
+    
+    if x is ("c"):
+        left()
+    
+    if x is ("z"):
+        right()
+
+    if x is ("s"):
+        mup()
+
+    if x is ("x"):
+        mdown()
+
+    if x is ("up"):
+        sup()
+
+    if x is ("down"):
+        sdown()
+    
+    if x is ("test"):
+        mup()
+        time.sleep(DELAY)
+        mdown()
+        time.sleep(DELAY)
+        left()
+        time.sleep(DELAY)
+        right()
+        time.sleep(DELAY)
+        m2b()
+        time.sleep(DELAY)
+        m2f()
 ```
 
 ### ONSHAPE LINK
