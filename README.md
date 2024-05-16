@@ -1,3 +1,4 @@
+
 # Engr3robotarmLG
 
 ### PROJECT DESCRIPTION
@@ -113,10 +114,15 @@ def m2b2 ():
     for step in range (HALFTURN):
         motor2.onestep(direction=stepper.BACKWARD)
         time.sleep(DELAY)
-def forward():
+def right():
     for step in range (HALFTURN):
         motor2.onestep(style=stepper.DOUBLE)
         motor1.onestep(style=stepper.DOUBLE)
+        time.sleep(DELAY)
+def left():
+    for step in range (HALFTURN):
+        motor2.onestep(direction=stepper.BACKWARD)
+        motor1.onestep(direction=stepper.BACKWARD)
         time.sleep(DELAY)
 
 
@@ -155,16 +161,17 @@ while True:
         m1b1()
         letnum = letnum + 1
     if x is ("1"):
-        forward()
+        m1f1()
     if x is ("2"):
-        m2b1()
-    if x is ("3"):
         m2f1()
-        time.sleep(.1)
-        sdown()
+    if x is ("3"):
+        m1b1()
+    if x is ("4"):
         m2b1()
-        time.sleep(.1)
-        sup()
+    if x is ("l"):
+        left()
+    if x is ("r"):
+        right()
     if letnum >= 8: # when you have enough letters, move this way and reset
         m1f1()
         sup()
@@ -176,7 +183,6 @@ while True:
         m2b1()
         m2b1()
         linenum = 0
-
 ```
 
 ### CODE SIMPLE
