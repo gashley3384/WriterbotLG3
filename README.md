@@ -1,5 +1,5 @@
 
-# Engr3robotarmLG
+# WriterbotLG3
 
 ### PROJECT DESCRIPTION
 This project is a robot that writes out letters in a created language called Angarkase according to keyboard inputs put in by a person. You will be able to input a letter, and a small plate
