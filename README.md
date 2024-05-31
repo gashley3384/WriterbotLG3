@@ -282,5 +282,18 @@ while True:
 #This is a simplified version of the code to write the language, the code for the language is unfinished as of 5/30/2024
 #which is when I am writing this note.
 ```
+### REFECTIONS
+
+<details>
+<summary>Linwood's</summary>
+<br>
+I really enjoyed this project because I think that it allowed me to strech my abilities. I did a lot of the iterative desgin for the physical thing, which allowed me to figure out what was wrong. For example, when the belt was hitting itself, I desgined two end things that allowed us to not have toi print an entire new x moption peice. I really enjoyed working with my partner, Griffin, who I have worked with on every engineering project, because it allowed us to work togethere to solve a really fun problem. Finallu, the core-XY motion system was really fun to make and really fun to see work when it did.
+</details>
+
+<details>
+<summary>Griffin's</summary>
+<br>
+This is how you dropdown.
+</details>
 
 
