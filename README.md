@@ -11,7 +11,7 @@ with a piece of paper will move with a pen over it, which will be attached to a 
 
 ### WIRING DIAGRAM
 
-![](media/Writer_Bot_Diagram.png)
+![](media/Writerbotdiagram.png)
 
 ### EVIDENCE
 
