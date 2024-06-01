@@ -18,22 +18,22 @@ We were assigned to make a robot arm for this project, but our group decided to 
 * 1 Battery Pack
 * 4 AA Batteries
 * 1 Acrylic baseplate
-2 3D-printed motor towers
-2 NEMA 17 Stepper motors
-1 Breadboard
-2 DRV8833 H-bridges
-2 Small Acrylic Slider mounts
-2 Large Acrylic Slider mounts
-1 3D-printed y-direction slider
-1 3D-printed x-direction slider
-1 Positional Servo motor
-1 3D-printed Servo mount
-2 Long strips of GT2 Timing belt
-2 3D-printed belt pulleys
-2 3D-printed Belt tensioners
-8 Belt towers of differing heights
-A bunch of 4-40 Nuts and Bolts
-Way too many Male-male jumper wires
+* 2 3D-printed motor towers
+* 2 NEMA 17 Stepper motors
+* 1 Breadboard
+* 2 DRV8833 H-bridges
+* 2 Small Acrylic Slider mounts
+* 2 Large Acrylic Slider mounts
+* 1 3D-printed y-direction slider
+* 1 3D-printed x-direction slider
+* 1 Positional Servo motor
+* 1 3D-printed Servo mount
+* 2 Long strips of GT2 Timing belt
+* 2 3D-printed belt pulleys
+* 2 3D-printed Belt tensioners
+* 8 Belt towers of differing heights
+* A bunch of 4-40 Nuts and Bolts
+* Way too many Male-male jumper wires
 
 ## EVIDENCE
 
@@ -41,15 +41,15 @@ Way too many Male-male jumper wires
 
 ## ONSHAPE MODELS
 
-![](media/WriterSide.pdf)
+![](media/Writeside.png)
 
 side view
 
-![](media/WriterTop.pdf)
+![](media/Writetop.png)
 
 top view
 
-![](media/WriterIso.pdf)
+![](media/Writeiso.png)
 
 isometric view
 
