@@ -2,8 +2,7 @@
 # WriterbotLG3
 
 ### PROJECT DESCRIPTION
-This project is a robot that writes out letters in a created language called Angarkase according to keyboard inputs put in by a person. You will be able to input a letter, and a small plate
-with a piece of paper will move with a pen over it, which will be attached to a servo in order to lift and put down the pen. 
+We were assigned to make a robot arm for this project, but our group decided to take it in a slightly different direction. This project is a robot that writes out letters in a created language called Angarkase according to keyboard inputs put in by a person. To work the robot, keyboard inputs are entered in, and a small plate with a piece of paper moves with a pen over it, which is attached to a servo in order to lift and put down the pen. The project is appropriately challenging for being something that isn't a robot arm, and also solves the problem of not having a standardized way to write in Angarkase.
 
 ### ONSHAPE LINK
 
@@ -282,18 +281,19 @@ while True:
 #This is a simplified version of the code to write the language, the code for the language is unfinished as of 5/30/2024
 #which is when I am writing this note.
 ```
-### REFECTIONS
+### REFLECTIONS
 
 <details>
 <summary>Linwood's</summary>
 <br>
-I really enjoyed this project because I think that it allowed me to strech my abilities. I did a lot of the iterative desgin for the physical thing, which allowed me to figure out what was wrong. For example, when the belt was hitting itself, I desgined two end things that allowed us to not have toi print an entire new x moption peice. I really enjoyed working with my partner, Griffin, who I have worked with on every engineering project, because it allowed us to work togethere to solve a really fun problem. Finallu, the core-XY motion system was really fun to make and really fun to see work when it did.
+I really enjoyed this project because I think that it allowed me to strech my abilities. I did a lot of the iterative desgin for the physical thing, which allowed me to figure out what was wrong. For example, when the belt was hitting itself, I desgined two end things that allowed us to not have toi print an entire new x moption peice. I really enjoyed working with my partner, Griffin, who I have worked with on every engineering project, because it allowed us to work togethere to solve a really fun problem. Finally, the core-XY motion system was really fun to make and really fun to see work when it did.
 </details>
 
 <details>
 <summary>Griffin's</summary>
 <br>
-This is how you dropdown.
+     Overall this project was a fun challenge that I had a good time taking on. We elected to start with the onshape modeling before we got the code working, and I think that was the right idea. The project was complex, so the heavy focus on the Onshape modeling in the early stages allowed us to troubleshoot as we wrote the code, along with having a good idea of how the final project would turn out. If I could change anything about how I worked on this project, I would probably have gone to more of the BACON meetings, because even with the time I did spend outside of school, the project ended up not being entirely finished as of writing this reflection. The functions for writing each letter, which can be partially seen in the ARCHIVES.md file, were complex, and by the time we were ready to write them, there was not enough time to do so. If I were to continue this project I would finish the functions for all 12 consonant symbols along with the 5 vowel diacritics, and I would test and adjust these functions so that the robot could write properly in Angarkase.
+    Linwood was a very helpful partner for this project, and has been helpful in the past, and I appreciate that we worked on an idea that I had and was centered around one of my out of school projects (building a language). The corexy system was also super interesting to learn about, and because of my new knowledge on it I feel as though I understand how 3d printers and other machines like it work a little bit better. 
 </details>
 
 
