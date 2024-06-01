@@ -1,22 +1,56 @@
 
 # WriterbotLG3
 
-### PROJECT DESCRIPTION
+## PROJECT DESCRIPTION
 We were assigned to make a robot arm for this project, but our group decided to take it in a slightly different direction. This project is a robot that writes out letters in a created language called Angarkase according to keyboard inputs put in by a person. To work the robot, keyboard inputs are entered in, and a small plate with a piece of paper moves with a pen over it, which is attached to a servo in order to lift and put down the pen. The project is appropriately challenging for being something that isn't a robot arm, and also solves the problem of not having a standardized way to write in Angarkase.
 
-### ONSHAPE LINK
+## ONSHAPE LINK
 
 (https://cvilleschools.onshape.com/documents/d0332011792ff0881e4ecb2d/w/f60ced9a74de595b67e1cf04/e/22963176449209f64e9ac10e?renderMode=0&uiState=664fa3f58b969a737dabac27)
 
-### WIRING DIAGRAM
+## WIRING DIAGRAM
 
 ![](media/Writerbotdiagram.png)
 
-### EVIDENCE
+## THE BOM
+
+1 Metro M4 Express
+1 Battery Pack
+4 AA Batteries
+1 Acrylic baseplate
+2 3D-printed motor towers
+2 NEMA 17 Stepper motors
+1 Breadboard
+2 DRV8833 H-bridges
+2 Small Acrylic Slider mounts
+2 Large Acrylic Slider mounts
+1 3D-printed y-direction slider
+1 3D-printed x-direction slider
+1 Positional Servo motor
+1 3D-printed Servo mount
+2 Long strips of GT2 Timing belt
+2 3D-printed belt pulleys
+2 3D-printed Belt tensioners
+8 Belt towers of differing heights
+A bunch of 4-40 Nuts and Bolts
+Way too many Male-male jumper wires
+
+## EVIDENCE
 
 ![](media/Writerbot.gif)
 
-### CODE
+## ONSHAPE MODELS
+
+![](media/WriterSide.pdf)
+side view
+
+![](media/WriterTop.pdf)
+top view
+
+![](media/WriterIso.pdf)
+isometric view
+
+## CODE
 ```python
 import board
 import time
@@ -281,7 +315,7 @@ while True:
 #This is a simplified version of the code to write the language, the code for the language is unfinished as of 5/30/2024
 #which is when I am writing this note.
 ```
-### REFLECTIONS
+## REFLECTIONS
 
 <details>
 <summary>Linwood's</summary>
