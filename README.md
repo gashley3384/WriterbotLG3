@@ -14,10 +14,10 @@ We were assigned to make a robot arm for this project, but our group decided to 
 
 ## THE BOM
 
-1 Metro M4 Express
-1 Battery Pack
-4 AA Batteries
-1 Acrylic baseplate
+* 1 Metro M4 Express
+* 1 Battery Pack
+* 4 AA Batteries
+* 1 Acrylic baseplate
 2 3D-printed motor towers
 2 NEMA 17 Stepper motors
 1 Breadboard
@@ -42,12 +42,15 @@ Way too many Male-male jumper wires
 ## ONSHAPE MODELS
 
 ![](media/WriterSide.pdf)
+
 side view
 
 ![](media/WriterTop.pdf)
+
 top view
 
 ![](media/WriterIso.pdf)
+
 isometric view
 
 ## CODE
