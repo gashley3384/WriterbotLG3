@@ -320,6 +320,14 @@ while True:
         down2()
     if x is ("d"):
         right2()
+    if x is ("q"):
+        upleft2()
+    if x is ("e"):
+        upright2()
+    if x is ("z"):
+        downleft2()
+    if x is ("c"):
+        downright2()
     if x is ("m"):
         sdown()
     if x is ("n"):
