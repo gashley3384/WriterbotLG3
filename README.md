@@ -1,18 +1,28 @@
 
 # WriterbotLG3
 
-## PROJECT DESCRIPTION
+## TABLE_OF_CONTENTS
+* [Table of Contents](#TABLE_OF_CONTENTS)
+* [Project Description](#PROJECT_DESCRIPTION)
+* [Onshape Link](#ONSHAPE_LINK)
+* [The BOM](#THE_BOM)
+* [Evidence](#EVIDENCE)
+* [Onshape Models](#ONSHAPE_MODELS)
+* [Code](#CODE)
+* [Reflections](#REFLECTIONS)
+
+## PROJECT_DESCRIPTION
 We were assigned to make a robot arm for this project, but our group decided to take it in a slightly different direction. This project is a robot that writes out letters in a created language called Angarkase according to keyboard inputs put in by a person. To work the robot, keyboard inputs are entered in, and a small plate with a piece of paper moves with a pen over it, which is attached to a servo in order to lift and put down the pen. The project is appropriately challenging for being something that isn't a robot arm, and also solves the problem of not having a standardized way to write in Angarkase.
 
-## ONSHAPE LINK
+## ONSHAPE_LINK
 
 (https://cvilleschools.onshape.com/documents/d0332011792ff0881e4ecb2d/w/f60ced9a74de595b67e1cf04/e/22963176449209f64e9ac10e?renderMode=0&uiState=664fa3f58b969a737dabac27)
 
-## WIRING DIAGRAM
+## WIRING_DIAGRAM
 
 ![](media/Writerbotdiagram.png)
 
-## THE BOM
+## THE_BOM
 
 * 1 Metro M4 Express
 * 1 Battery Pack
@@ -39,7 +49,7 @@ We were assigned to make a robot arm for this project, but our group decided to 
 
 ![](media/Writerbot.gif)
 
-## ONSHAPE MODELS
+## ONSHAPE_MODELS
 
 ![](media/Writeside.png)
 
