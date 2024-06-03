@@ -333,7 +333,7 @@ while True:
 <details>
 <summary>Linwood's</summary>
 <br>
-I really enjoyed this project because I think that it allowed me to strech my abilities. I did a lot of the iterative desgin for the physical thing, which allowed me to figure out what was wrong. For example, when the belt was hitting itself, I desgined two end things that allowed us to not have toi print an entire new x moption peice. I really enjoyed working with my partner, Griffin, who I have worked with on every engineering project, because it allowed us to work togethere to solve a really fun problem. Finally, the core-XY motion system was really fun to make and really fun to see work when it did.
+I really enjoyed this project because I think that it allowed me to strech my abilities. I did a lot of the iterative desgin for the physical thing, which allowed me to figure out what was wrong. For example, when the belt was hitting itself, I desgined two end things that allowed us to not have to print an entire new x motion peice. I really enjoyed working with my partner, Griffin, who I have worked with on every engineering project, because it allowed us to work togethere to solve a really fun problem. I think that we did a great job staying on task and had a really fun time making the printer. If I/we had more time to continue the project, I think that we would finally begin the process of attempting to automate the printer so that it could write in Angerkase. Finally, I think that the choosing the core x-y motion system for our project was the right idea because it was super cool and is an awesome thing to see work, even without the autonomy.
 </details>
 
 <details>
